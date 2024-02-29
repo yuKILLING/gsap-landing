@@ -2,11 +2,11 @@
     <div class="text-white">
         <header class="mt-10 shapka">
             <!-- HEADER-SHAPKA -->
-            <div class="text-white flex justify-around items-center">
+            <div class="text-white flex lg:justify-around sm:ml-20 items-center">
                 <div>
                     <img src="@/assets/pngs/logo.png" alt="" class="cursor-pointer main_logo">
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <ul class="menu flex space-x-7">
                         <li class="cursor-pointer">Buy/Sell</li>
                         <li class="cursor-pointer">Grow</li>
@@ -15,7 +15,7 @@
                         <li class="cursor-pointer">Support</li>
                     </ul>
                 </div>
-                <div class="space-x-3">
+                <div class="lg:space-x-3 hidden lg:block">
                     <button
                         class="px-5 w-[96px] h-[40px] rounded-[10px] text-[15px] text-white bg-transparent border border-white cursor-pointer btn-1">Sign
                         In</button>
@@ -23,14 +23,14 @@
                 </div>
             </div>
             <!-- HERO SECTION -->
-            <div class="flex justify-center items-center content-center w-screen h-screen relative">
-                <div>
+            <div class="flex justify-center items-center content-center w-screen h-screen relative flex-col">
+                <div class="hidden lg:block">
                     <img src="@/assets/pngs/header-pngs/Ellipse 74.png" alt=""
-                        class="absolute top-[00px] left-[200px] prop">
+                        class="absolute top-[00px] left-[200px] prop hidden lg:block">
                     <img src="@/assets/pngs/header-pngs/Ellipse 75.png" alt=""
-                        class="absolute top-[-60px] left-[70px] prop">
+                        class="absolute top-[-60px] left-[70px] prop hidden lg:block">
                     <img src="@/assets/pngs/header-pngs/Ellipse 76.png" alt=""
-                        class="absolute top-[-100px] left-[0px] prop">
+                        class="absolute top-[-100px] left-[0px] prop hidden lg:block">
                     <img src="@/assets/pngs/header-pngs/Etherium-2 copy 1.png" alt=""
                         class="absolute top-[500px] right-[290px] prop" data-speed="0.15">
                     <img src="@/assets/pngs/header-pngs/LiteCoin-1.png" alt=""
@@ -54,8 +54,9 @@
                     <img src="@/assets/pngs/Looper-3.png" alt="" class="absolute top-[1300px] right-[-200px] looper">
                     <img src="@/assets/pngs/star-img (4).png" alt="" class="absolute top-[2000px] left-[330px] prop">
                 </div>
-                <div class="absolute top-[250px] flex flex-col items-center">
-                    <h1 class="hero_title text-white text-[85px] max-w-[800px] text-center font-black">We make crypto
+                <div class="absolute top-[250px] flex flex-col items-center lg:w-auto w-full">
+                    <h1 class="hero_title text-white text-[85px] max-w-[800px] text-center font-black lg:w-auto w-full">We
+                        make crypto
                         clear
                         and
                         simple</h1>

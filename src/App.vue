@@ -3,7 +3,7 @@
     <Header></Header>
     <!-- SECOND SECTION -->
     <section>
-      <div class="flex justify-center space-x-10 items-center three_items">
+      <div class="flex justify-center lg:space-y-0 space-y-5 lg:space-x-10 items-center three_items flex-col lg:flex-row">
         <div class="w-[380px] h-[346px] bg-[#1A1B23] rounded-[25px] flex flex-col items-center space-y-4">
           <img src="@/assets/pngs/img.png" alt="" class="w-[80px] mt-5">
           <h1 class="text-[32px] font-extrabold text-white text-center">Trade Desk</h1>
@@ -38,7 +38,7 @@
     </section>
     <!-- THIRD SECTION -->
     <section class="text-white w-full h-[700px] flex flex-col justify-center items-center crupto-section">
-      <h1 class="max-w-[780px] h-[130px] font-black text-[50px] text-center mb-10 z-20">A crypto investment platform
+      <h1 class="lg:max-w-[780px] lg:h-[130px] font-black text-[50px] text-center mb-10 z-20">A crypto investment platform
         that invests in
         you </h1>
       <p class="max-w-[580px] max-h-[48px] text-center text-[16px] text-[#898CA9] mb-[32px] z-20">We invest more resources
@@ -55,13 +55,15 @@
         Started</button>
     </section>
     <!-- FOURTH SECTION -->
-    <section class="text-white flex justify-center items-center space-x-14 mb-[300px] info">
-      <div class="w-[500px] left_info">
+    <section class="text-white flex justify-center items-center lg:space-x-14 mb-[300px] info lg:flex-row flex-col">
+      <div class="lg:w-[500px] left_info">
         <img src="@/assets/pngs/icons.png" alt="">
       </div>
-      <div class="space-y-5 right_info">
-        <h1 class="font-black text-[50px] w-[580px]">24/7 access to full service customer support</h1>
-        <p class="w-[580px] text-[16px] text-[#898CA9]">We invest more resources than any other platform in making
+      <div class="space-y-5 right_info flex justify-center items-center flex-col">
+        <h1 class="font-black text-center text-[50px] lg:w-[580px]">24/7 access to full service customer
+          support</h1>
+        <p class="lg:w-[580px] text-[16px] text-center text-[#898CA9]">We invest more resources than any other platform in
+          making
           sure
           great support
           from
@@ -76,7 +78,7 @@
     <!-- FIFTH SECTION -->
     <section class="flex flex-col justify-center items-center text-white relative mb-[150px] buynsell">
       <div class="flex justify-center items-center text-center flex-col space-y-5 mb-[100px]">
-        <h1 class="max-w-[780px] h-[130px] font-black text-[50px] text-center mb-10">Buy and sell with the lowest
+        <h1 class="lg:max-w-[780px] lg:h-[130px] font-black text-[50px] text-center mb-10">Buy and sell with the lowest
           fees
           in the industry</h1>
         <p class="max-w-[580px] max-h-[48px] text-center text-[16px] text-[#898CA9] mb-[32px]">Buy and sell 150+
@@ -91,21 +93,24 @@
       <img src="@/assets/pngs/bg-img (1).png" alt="" class="absolute top-[400px] left-[-800px] looper2">
     </section>
     <!-- SIXTH SECTION -->
-    <section class="text-white flex justify-center items-center space-x-[200px] mb-[100px]">
-      <div class="space-y-5 z-30">
-        <h1 class="font-black text-[50px] w-[580px]">Take your first step into safe, secure crypto investing</h1>
-        <p class="w-[580px] text-[16px] text-[#898CA9]">Separated they live in Bookmarks right at the coast of the
+    <section
+      class="text-white flex justify-center items-center lg:space-x-[200px] mb-[200px] lg:flex-row flex-col second_info">
+      <div class="space-y-5 z-30 flex flex-col justify-center items-center mb-5 leftsec_info">
+        <h1 class="font-black text-[50px] lg:w-[580px] text-center">Take your first step into safe, secure crypto
+          investing</h1>
+        <p class="lg:w-[580px] text-[16px] text-[#898CA9] text-center">Separated they live in Bookmarks right at the coast
+          of the
           famous Semantics, large language ocean
           Separated they live in Bookmarks right at the coast.</p>
         <button
           class="px-5 w-[156px] h-[56px] rounded-[10px] text-[15px] text-white bg-gradient-to-r from-purple-900 to-cyan-300 cursor-pointer">Get
           Started</button>
       </div>
-      <div><img src="@/assets/pngs/icoo.png" alt=""></div>
+      <div><img src="@/assets/pngs/icoo.png" alt="" class="rightsec_info"></div>
     </section>
     <!-- SEVENTH SECTION -->
     <section class="flex flex-col justify-center items-center mb-[200px]">
-      <h1 class="font-black text-[50px]">Receive transmissions</h1>
+      <h1 class="font-black text-[50px] text-center">Receive transmissions</h1>
       <div class="flex text-[16px] mb-5">
         <p class="inline-block text-[#898CA9] mb-3">Unsubscribe at any time. </p>
         <p class="inline-block text-white">Privacy policy↗</p>
@@ -121,7 +126,7 @@
 
 
     <!-- FOOTER -->
-    <footer class="flex justify-around mb-16 footer">
+    <footer class="flex justify-around mb-16 footer lg:flex-row flex-col space-y-10 lg:spsace-y-0">
       <div class="max-w-[380px]">
         <img src="@/assets/pngs/logo.png" alt="" class="cursor-pointer w-[135px] h-[20px] mb-5">
         <p class="mb-5">CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and
@@ -165,7 +170,7 @@
 <script>
 import { onMounted } from 'vue';
 import Header from './components/header.vue';
-import { gsap } from "gsap";
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default {
@@ -173,6 +178,9 @@ export default {
   setup() {
     onMounted(() => {
       document.body.classList.add('bg-black');
+      document.body.classList.add('box-border');
+      document.body.classList.add('overflow-x-hidden');
+
       gsap.fromTo('.three_items',
         {
           x: 700
@@ -195,7 +203,7 @@ export default {
           // start: 'top top',
           scrub: 1,
         },
-        yPercent: -40
+        yPercent: -30
       })
       gsap.to('.right_info', {
         scrollTrigger: {
@@ -241,7 +249,7 @@ export default {
           opacity: 0
         },
         {
-          opacity: 1,
+          opacity: 2,
           scrollTrigger: {
             trigger: '.footer',
             // markers: 1,
@@ -249,6 +257,24 @@ export default {
             scrub: 1,
           }
         })
+      gsap.to('.leftsec_info', {
+        scrollTrigger: {
+          trigger: '.second_info',
+          // markers: 1,
+          // start: 'top top',
+          scrub: 1,
+        },
+        yPercent: 30
+      })
+      gsap.to('.rightsec_info', {
+        scrollTrigger: {
+          trigger: '.second_info',
+          // markers: 1,
+          // start: 'top top',
+          scrub: 1,
+        },
+        yPercent: -30
+      })
     })
   }
 }
